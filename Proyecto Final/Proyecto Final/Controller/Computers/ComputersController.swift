@@ -42,9 +42,7 @@ class ComputersController: HomeController, UITableViewDelegate,  UITableViewData
 
     @objc func addComputer() {
         let controller = AddComputersController()
-        present(UINavigationController(rootViewController: controller), animated: true, completion: {
-            self.fetchComputers()
-        })
+        present(UINavigationController(rootViewController: controller), animated: true, completion: nil)
     }
     
     func setUpTable() {

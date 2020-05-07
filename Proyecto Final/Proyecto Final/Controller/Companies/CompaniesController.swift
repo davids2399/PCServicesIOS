@@ -40,9 +40,7 @@ class CompaniesController: HomeController, UITableViewDelegate,  UITableViewData
     
     @objc func addCompany() {
         let controller = AddCompaniesController()
-        present(UINavigationController(rootViewController: controller), animated: true, completion: {
-            self.fetchCompanies()
-        })
+        present(UINavigationController(rootViewController: controller), animated: true, completion: nil)
     }
     
     func setUpTable() {

@@ -7,8 +7,8 @@
 //
 import UIKit
 
-class CompanyPicker: PickerController {
-    var companies = [Company]()
+class UserPicker: PickerController {
+    var users = [User]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,37 +19,37 @@ class CompanyPicker: PickerController {
         super.createPicker(frame: frame)
     }
     
-    func getActiveCompanyId() -> String{
-        return self.companies[super.activePickerId].idCompany
+    func getActiveUserId() -> String{
+        return self.users[super.activePickerId].idUser
     }
     
     func fillPicker(){
         var temp: [String] = []
         super.bringData(completion: { result in
             for element in result["data"] as! [AnyObject] {
-                var company = Company(idCompany: "", name: "", email: "", created_at: "")
+                var user = User(idUser: "", name: "", lastname: "", email: "")
                 for (key, value) in element as! Dictionary<String, AnyObject> {
                     switch key {
                     case "name":
-                        company?.name = value as! String
+                        user?.name = value as! String
                         break
                     case "email":
-                        company?.email = value as! String
+                        user?.email = value as! String
                         break
-                    case "idCompany":
-                        company?.idCompany = value.stringValue
+                    case "idUser":
+                        user?.idUser = value.stringValue
                         break
-                    case "created_at":
-                        company?.created_at = value as! String
+                    case "lastname":
+                        user?.lastname = value as! String
                         break
                     default:
                         break
                     }
                 }
-                self.companies.append(company!)
-                temp.append(company!.name)
+                self.users.append(user!)
+                temp.append(user!.name)
             }
             self.pickerOptions = temp
-        }, url: "companies")
+        }, url: "users")
     }
 }

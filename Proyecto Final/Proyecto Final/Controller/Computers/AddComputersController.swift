@@ -14,9 +14,9 @@ class AddComputersController: AddController {
         super.configureUI(title: "Añadir Equipo")
         
         var computerFields: [formFields] = []
-        computerFields.append(formFields(name: "Marca", isPassword: false, type: ""))
-        computerFields.append(formFields(name: "No. Serie", isPassword: false, type: ""))
-        computerFields.append(formFields(name: "Empresa", isPassword: true, type: "picker"))
+        computerFields.append(formFields(name: "Marca", isPassword: false, type: "", picker: ""))
+        computerFields.append(formFields(name: "No. Serie", isPassword: false, type: "", picker: ""))
+        computerFields.append(formFields(name: "Empresa", isPassword: true, type: "picker", picker: "computer"))
         super.configureForm(fields: computerFields)
         super.sendButton.addTarget(super.self, action: #selector(self.sendComputer), for: .touchUpInside)
     }
@@ -35,8 +35,8 @@ class AddComputersController: AddController {
         {
             answers.append(txtField.text as! String!)
         }
-        
-        let params: [String : Any] = ["brand": answers[0], "serial_number": answers[1], "company_id": Int(super.pickers[0].getActiveCompanyId())]
+        let picker = super.pickers[0] as! CompanyPicker
+        let params: [String : Any] = ["brand": answers[0], "serial_number": answers[1], "company_id": Int(picker.getActiveCompanyId())]
         
         super.sendToApi(url: "computers", params: params)
     }

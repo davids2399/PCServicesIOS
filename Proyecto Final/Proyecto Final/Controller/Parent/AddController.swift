@@ -9,11 +9,12 @@
 import UIKit
 
 class AddController: UIViewController {
-    var pickers: [CompanyPicker] = []
+    var pickers: [Any] = []
     struct formFields {
         var name: String
         var isPassword: Bool
         var type: String
+        var picker: String
     }
     
     let sendButton = UIButton()
@@ -56,10 +57,34 @@ class AddController: UIViewController {
             
             switch field.type {
             case "picker":
-                let companyPicker = CompanyPicker()
-                companyPicker.createPicker(frame: CGRect(x:23, y: y, width: 370, height: 70))
-                pickers.append(companyPicker)
-                self.view.addSubview(companyPicker.myPicker)
+                switch field.picker {
+                case "company":
+                    let companyPicker = CompanyPicker()
+                    companyPicker.start(frame: CGRect(x:23, y: y, width: 370, height: 70))
+                    pickers.append(companyPicker)
+                    self.view.addSubview(companyPicker.myPicker)
+                    break
+                case "user":
+                    let userPicker = UserPicker()
+                    userPicker.start(frame: CGRect(x:23, y: y, width: 370, height: 70))
+                    pickers.append(userPicker)
+                    self.view.addSubview(userPicker.myPicker)
+                    break
+                case "computer":
+                    let computerPicker = ComputerPicker()
+                    computerPicker.start(frame: CGRect(x:23, y: y, width: 370, height: 70))
+                    pickers.append(computerPicker)
+                    self.view.addSubview(computerPicker.myPicker)
+                    break
+                case "service":
+                    let servicePicker = ServicePicker()
+                    servicePicker.start(frame: CGRect(x:23, y: y, width: 370, height: 70))
+                    pickers.append(servicePicker)
+                    self.view.addSubview(servicePicker.myPicker)
+                    break
+                default:
+                    break
+                }
                 y = y + 80
                 break
             default:

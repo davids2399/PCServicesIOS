@@ -14,10 +14,10 @@ class AddUsersController: AddController {
         super.configureUI(title: "Añadir Tecnico")
         
         var userFields: [formFields] = []
-        userFields.append(formFields(name: "Nombre(s)", isPassword: false, type: ""))
-        userFields.append(formFields(name: "Apellidos", isPassword: false, type: ""))
-        userFields.append(formFields(name: "Email", isPassword: false, type: ""))
-        userFields.append(formFields(name: "Contraseña", isPassword: true, type: ""))
+        userFields.append(formFields(name: "Nombre(s)", isPassword: false, type: "", picker: ""))
+        userFields.append(formFields(name: "Apellidos", isPassword: false, type: "", picker: ""))
+        userFields.append(formFields(name: "Email", isPassword: false, type: "", picker: ""))
+        userFields.append(formFields(name: "Contraseña", isPassword: true, type: "", picker: ""))
         super.configureForm(fields: userFields)
         
         super.sendButton.addTarget(super.self, action: #selector(self.sendUser), for: .touchUpInside)

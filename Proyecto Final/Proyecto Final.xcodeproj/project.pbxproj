@@ -35,6 +35,11 @@
 		B4AEA1F22462A7F300FEF1A6 /* Report.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AEA1F12462A7F300FEF1A6 /* Report.swift */; };
 		B4AEA1F42463463B00FEF1A6 /* AddController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AEA1F32463463B00FEF1A6 /* AddController.swift */; };
 		B4AEA1F624636C6300FEF1A6 /* CompanyPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AEA1F524636C6300FEF1A6 /* CompanyPicker.swift */; };
+		B4F0B7A024639016002DDDE1 /* PickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F0B79F24639016002DDDE1 /* PickerController.swift */; };
+		B4F0B7A22463A530002DDDE1 /* UserPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F0B7A12463A530002DDDE1 /* UserPicker.swift */; };
+		B4F0B7A42463A8CC002DDDE1 /* ComputerPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F0B7A32463A8CC002DDDE1 /* ComputerPicker.swift */; };
+		B4F0B7A72463AE06002DDDE1 /* ServicePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F0B7A62463AE06002DDDE1 /* ServicePicker.swift */; };
+		B4F0B7A92463AE1C002DDDE1 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F0B7A82463AE1C002DDDE1 /* Service.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +73,11 @@
 		B4AEA1F12462A7F300FEF1A6 /* Report.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Report.swift; sourceTree = "<group>"; };
 		B4AEA1F32463463B00FEF1A6 /* AddController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddController.swift; sourceTree = "<group>"; };
 		B4AEA1F524636C6300FEF1A6 /* CompanyPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyPicker.swift; sourceTree = "<group>"; };
+		B4F0B79F24639016002DDDE1 /* PickerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerController.swift; sourceTree = "<group>"; };
+		B4F0B7A12463A530002DDDE1 /* UserPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPicker.swift; sourceTree = "<group>"; };
+		B4F0B7A32463A8CC002DDDE1 /* ComputerPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputerPicker.swift; sourceTree = "<group>"; };
+		B4F0B7A62463AE06002DDDE1 /* ServicePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicePicker.swift; sourceTree = "<group>"; };
+		B4F0B7A82463AE1C002DDDE1 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +131,7 @@
 				B4AEA1DB24626F9200FEF1A6 /* User.swift */,
 				B4AEA1E82462784700FEF1A6 /* Computer.swift */,
 				B4AEA1F12462A7F300FEF1A6 /* Report.swift */,
+				B4F0B7A82463AE1C002DDDE1 /* Service.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -136,14 +147,14 @@
 		B446FCB0245F2DC800D633CA /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				B4F0B79E246389DA002DDDE1 /* Parent */,
+				B4F0B7A52463ADE7002DDDE1 /* Services */,
 				B4AEA1EA2462A72100FEF1A6 /* Reports */,
 				B4AEA1E1246277E000FEF1A6 /* Computers */,
 				B446FCC42460A67B00D633CA /* Users */,
 				B446FCC32460A66A00D633CA /* Companies */,
 				B446FCB5245F2E2100D633CA /* ContainerController.swift */,
-				B446FCB2245F2E0100D633CA /* HomeController.swift */,
 				B446FCB7245F2E3200D633CA /* MenuController.swift */,
-				B4AEA1F32463463B00FEF1A6 /* AddController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -173,6 +184,7 @@
 				B446FCC52460A69D00D633CA /* UsersController.swift */,
 				B4AEA1DD246270B000FEF1A6 /* AddUsersController.swift */,
 				B4AEA1DF2462724F00FEF1A6 /* UserOptionCell.swift */,
+				B4F0B7A12463A530002DDDE1 /* UserPicker.swift */,
 			);
 			path = Users;
 			sourceTree = "<group>";
@@ -183,6 +195,7 @@
 				B4AEA1E2246277F700FEF1A6 /* ComputersController.swift */,
 				B4AEA1E42462780B00FEF1A6 /* AddComputersController.swift */,
 				B4AEA1E62462782400FEF1A6 /* ComputerOptionCell.swift */,
+				B4F0B7A32463A8CC002DDDE1 /* ComputerPicker.swift */,
 			);
 			path = Computers;
 			sourceTree = "<group>";
@@ -195,6 +208,24 @@
 				B4AEA1EF2462A76500FEF1A6 /* ReportOptionCell.swift */,
 			);
 			path = Reports;
+			sourceTree = "<group>";
+		};
+		B4F0B79E246389DA002DDDE1 /* Parent */ = {
+			isa = PBXGroup;
+			children = (
+				B446FCB2245F2E0100D633CA /* HomeController.swift */,
+				B4AEA1F32463463B00FEF1A6 /* AddController.swift */,
+				B4F0B79F24639016002DDDE1 /* PickerController.swift */,
+			);
+			path = Parent;
+			sourceTree = "<group>";
+		};
+		B4F0B7A52463ADE7002DDDE1 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B4F0B7A62463AE06002DDDE1 /* ServicePicker.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,6 +299,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4F0B7A72463AE06002DDDE1 /* ServicePicker.swift in Sources */,
 				B4AEA1DC24626F9200FEF1A6 /* User.swift in Sources */,
 				B446FCC02460847900D633CA /* CompaniesController.swift in Sources */,
 				B4AEA1E52462780B00FEF1A6 /* AddComputersController.swift in Sources */,
@@ -277,12 +309,16 @@
 				B4AEA1DE246270B000FEF1A6 /* AddUsersController.swift in Sources */,
 				B4AEA1EC2462A74600FEF1A6 /* ReportsController.swift in Sources */,
 				B4AEA1E72462782400FEF1A6 /* ComputerOptionCell.swift in Sources */,
+				B4F0B7A22463A530002DDDE1 /* UserPicker.swift in Sources */,
 				B4AEA1F624636C6300FEF1A6 /* CompanyPicker.swift in Sources */,
 				B446FCBA245F4C2300D633CA /* Protocols.swift in Sources */,
+				B4F0B7A42463A8CC002DDDE1 /* ComputerPicker.swift in Sources */,
 				B446FCC224608BAA00D633CA /* Company.swift in Sources */,
 				B4AEA1E92462784700FEF1A6 /* Computer.swift in Sources */,
 				B4AEA1EE2462A75600FEF1A6 /* AddReportsController.swift in Sources */,
+				B4F0B7A92463AE1C002DDDE1 /* Service.swift in Sources */,
 				B446FCBC245F510F00D633CA /* MenuOptionCell.swift in Sources */,
+				B4F0B7A024639016002DDDE1 /* PickerController.swift in Sources */,
 				B446FCBE245F574200D633CA /* MenuOption.swift in Sources */,
 				B446FCB8245F2E3200D633CA /* MenuController.swift in Sources */,
 				B446FCC62460A69D00D633CA /* UsersController.swift in Sources */,

@@ -14,9 +14,9 @@ class AddCompaniesController: AddController {
         super.configureUI(title: "Añadir Empresa")
         
         var companyFields: [formFields] = []
-        companyFields.append(formFields(name: "Nombre", isPassword: false, type: ""))
-        companyFields.append(formFields(name: "Email", isPassword: false, type: ""))
-        companyFields.append(formFields(name: "Contraseña", isPassword: true, type: ""))
+        companyFields.append(formFields(name: "Nombre", isPassword: false, type: "", picker: ""))
+        companyFields.append(formFields(name: "Email", isPassword: false, type: "", picker: ""))
+        companyFields.append(formFields(name: "Contraseña", isPassword: true, type: "", picker: ""))
         super.configureForm(fields: companyFields)
         
         super.sendButton.addTarget(super.self, action: #selector(self.sendCompany), for: .touchUpInside)

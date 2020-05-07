@@ -41,9 +41,7 @@ class ReportsController: HomeController, UITableViewDelegate,  UITableViewDataSo
     
     @objc func addReport() {
         let controller = AddReportsController()
-        present(UINavigationController(rootViewController: controller), animated: true, completion: {
-            self.fetchReports()
-        })
+        present(UINavigationController(rootViewController: controller), animated: true, completion: nil)
     }
     
     func setUpTable() {

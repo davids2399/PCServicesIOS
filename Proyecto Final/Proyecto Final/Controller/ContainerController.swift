@@ -10,7 +10,6 @@ import UIKit
  
  class ContainerController: UIViewController {
     // Properties
-    
     var menuController: MenuController!
     var centerController: UIViewController!
     var savedController: UIViewController!

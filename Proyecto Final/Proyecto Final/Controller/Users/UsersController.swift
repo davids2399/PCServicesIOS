@@ -41,9 +41,7 @@ class UsersController: HomeController, UITableViewDelegate,  UITableViewDataSour
     
     @objc func addUser() {
         let controller = AddUsersController()
-        present(UINavigationController(rootViewController: controller), animated: true, completion: {
-            self.fetchUsers()
-        })
+        present(UINavigationController(rootViewController: controller), animated: true, completion: nil)
     }
     
     func setUpTable() {

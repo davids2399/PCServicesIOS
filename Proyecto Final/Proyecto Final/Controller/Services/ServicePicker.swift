@@ -7,8 +7,8 @@
 //
 import UIKit
 
-class CompanyPicker: PickerController {
-    var companies = [Company]()
+class ServicePicker: PickerController {
+    var services = [Service]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,37 +19,31 @@ class CompanyPicker: PickerController {
         super.createPicker(frame: frame)
     }
     
-    func getActiveCompanyId() -> String{
-        return self.companies[super.activePickerId].idCompany
+    func getActiveServiceId() -> String{
+        return self.services[super.activePickerId].idService
     }
     
     func fillPicker(){
         var temp: [String] = []
         super.bringData(completion: { result in
             for element in result["data"] as! [AnyObject] {
-                var company = Company(idCompany: "", name: "", email: "", created_at: "")
+                var service = Service(idService: "", name: "")
                 for (key, value) in element as! Dictionary<String, AnyObject> {
                     switch key {
                     case "name":
-                        company?.name = value as! String
+                        service?.name = value as! String
                         break
-                    case "email":
-                        company?.email = value as! String
-                        break
-                    case "idCompany":
-                        company?.idCompany = value.stringValue
-                        break
-                    case "created_at":
-                        company?.created_at = value as! String
+                    case "idService":
+                        service?.idService = value.stringValue
                         break
                     default:
                         break
                     }
                 }
-                self.companies.append(company!)
-                temp.append(company!.name)
+                self.services.append(service!)
+                temp.append(service!.name)
             }
             self.pickerOptions = temp
-        }, url: "companies")
+        }, url: "services")
     }
 }
