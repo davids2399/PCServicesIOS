@@ -19,6 +19,22 @@
 		B446FCBE245F574200D633CA /* MenuOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = B446FCBD245F574200D633CA /* MenuOption.swift */; };
 		B446FCC02460847900D633CA /* CompaniesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B446FCBF2460847900D633CA /* CompaniesController.swift */; };
 		B446FCC224608BAA00D633CA /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = B446FCC124608BAA00D633CA /* Company.swift */; };
+		B446FCC62460A69D00D633CA /* UsersController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B446FCC52460A69D00D633CA /* UsersController.swift */; };
+		B446FCC82460CF8000D633CA /* CompanyOptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B446FCC72460CF8000D633CA /* CompanyOptionCell.swift */; };
+		B4AEA1DA2461F96C00FEF1A6 /* AddCompaniesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AEA1D92461F96C00FEF1A6 /* AddCompaniesController.swift */; };
+		B4AEA1DC24626F9200FEF1A6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AEA1DB24626F9200FEF1A6 /* User.swift */; };
+		B4AEA1DE246270B000FEF1A6 /* AddUsersController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AEA1DD246270B000FEF1A6 /* AddUsersController.swift */; };
+		B4AEA1E02462724F00FEF1A6 /* UserOptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AEA1DF2462724F00FEF1A6 /* UserOptionCell.swift */; };
+		B4AEA1E3246277F700FEF1A6 /* ComputersController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AEA1E2246277F700FEF1A6 /* ComputersController.swift */; };
+		B4AEA1E52462780B00FEF1A6 /* AddComputersController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AEA1E42462780B00FEF1A6 /* AddComputersController.swift */; };
+		B4AEA1E72462782400FEF1A6 /* ComputerOptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AEA1E62462782400FEF1A6 /* ComputerOptionCell.swift */; };
+		B4AEA1E92462784700FEF1A6 /* Computer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AEA1E82462784700FEF1A6 /* Computer.swift */; };
+		B4AEA1EC2462A74600FEF1A6 /* ReportsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AEA1EB2462A74600FEF1A6 /* ReportsController.swift */; };
+		B4AEA1EE2462A75600FEF1A6 /* AddReportsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AEA1ED2462A75600FEF1A6 /* AddReportsController.swift */; };
+		B4AEA1F02462A76500FEF1A6 /* ReportOptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AEA1EF2462A76500FEF1A6 /* ReportOptionCell.swift */; };
+		B4AEA1F22462A7F300FEF1A6 /* Report.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AEA1F12462A7F300FEF1A6 /* Report.swift */; };
+		B4AEA1F42463463B00FEF1A6 /* AddController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AEA1F32463463B00FEF1A6 /* AddController.swift */; };
+		B4AEA1F624636C6300FEF1A6 /* CompanyPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AEA1F524636C6300FEF1A6 /* CompanyPicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +52,22 @@
 		B446FCBD245F574200D633CA /* MenuOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuOption.swift; sourceTree = "<group>"; };
 		B446FCBF2460847900D633CA /* CompaniesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompaniesController.swift; sourceTree = "<group>"; };
 		B446FCC124608BAA00D633CA /* Company.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
+		B446FCC52460A69D00D633CA /* UsersController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersController.swift; sourceTree = "<group>"; };
+		B446FCC72460CF8000D633CA /* CompanyOptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyOptionCell.swift; sourceTree = "<group>"; };
+		B4AEA1D92461F96C00FEF1A6 /* AddCompaniesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCompaniesController.swift; sourceTree = "<group>"; };
+		B4AEA1DB24626F9200FEF1A6 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		B4AEA1DD246270B000FEF1A6 /* AddUsersController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddUsersController.swift; sourceTree = "<group>"; };
+		B4AEA1DF2462724F00FEF1A6 /* UserOptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserOptionCell.swift; sourceTree = "<group>"; };
+		B4AEA1E2246277F700FEF1A6 /* ComputersController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputersController.swift; sourceTree = "<group>"; };
+		B4AEA1E42462780B00FEF1A6 /* AddComputersController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddComputersController.swift; sourceTree = "<group>"; };
+		B4AEA1E62462782400FEF1A6 /* ComputerOptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputerOptionCell.swift; sourceTree = "<group>"; };
+		B4AEA1E82462784700FEF1A6 /* Computer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Computer.swift; sourceTree = "<group>"; };
+		B4AEA1EB2462A74600FEF1A6 /* ReportsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportsController.swift; sourceTree = "<group>"; };
+		B4AEA1ED2462A75600FEF1A6 /* AddReportsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddReportsController.swift; sourceTree = "<group>"; };
+		B4AEA1EF2462A76500FEF1A6 /* ReportOptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportOptionCell.swift; sourceTree = "<group>"; };
+		B4AEA1F12462A7F300FEF1A6 /* Report.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Report.swift; sourceTree = "<group>"; };
+		B4AEA1F32463463B00FEF1A6 /* AddController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddController.swift; sourceTree = "<group>"; };
+		B4AEA1F524636C6300FEF1A6 /* CompanyPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyPicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +118,9 @@
 			children = (
 				B446FCBD245F574200D633CA /* MenuOption.swift */,
 				B446FCC124608BAA00D633CA /* Company.swift */,
+				B4AEA1DB24626F9200FEF1A6 /* User.swift */,
+				B4AEA1E82462784700FEF1A6 /* Computer.swift */,
+				B4AEA1F12462A7F300FEF1A6 /* Report.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -101,10 +136,14 @@
 		B446FCB0245F2DC800D633CA /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				B4AEA1EA2462A72100FEF1A6 /* Reports */,
+				B4AEA1E1246277E000FEF1A6 /* Computers */,
+				B446FCC42460A67B00D633CA /* Users */,
+				B446FCC32460A66A00D633CA /* Companies */,
 				B446FCB5245F2E2100D633CA /* ContainerController.swift */,
 				B446FCB2245F2E0100D633CA /* HomeController.swift */,
 				B446FCB7245F2E3200D633CA /* MenuController.swift */,
-				B446FCBF2460847900D633CA /* CompaniesController.swift */,
+				B4AEA1F32463463B00FEF1A6 /* AddController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -115,6 +154,47 @@
 				B446FCB9245F4C2300D633CA /* Protocols.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		B446FCC32460A66A00D633CA /* Companies */ = {
+			isa = PBXGroup;
+			children = (
+				B446FCBF2460847900D633CA /* CompaniesController.swift */,
+				B4AEA1D92461F96C00FEF1A6 /* AddCompaniesController.swift */,
+				B446FCC72460CF8000D633CA /* CompanyOptionCell.swift */,
+				B4AEA1F524636C6300FEF1A6 /* CompanyPicker.swift */,
+			);
+			path = Companies;
+			sourceTree = "<group>";
+		};
+		B446FCC42460A67B00D633CA /* Users */ = {
+			isa = PBXGroup;
+			children = (
+				B446FCC52460A69D00D633CA /* UsersController.swift */,
+				B4AEA1DD246270B000FEF1A6 /* AddUsersController.swift */,
+				B4AEA1DF2462724F00FEF1A6 /* UserOptionCell.swift */,
+			);
+			path = Users;
+			sourceTree = "<group>";
+		};
+		B4AEA1E1246277E000FEF1A6 /* Computers */ = {
+			isa = PBXGroup;
+			children = (
+				B4AEA1E2246277F700FEF1A6 /* ComputersController.swift */,
+				B4AEA1E42462780B00FEF1A6 /* AddComputersController.swift */,
+				B4AEA1E62462782400FEF1A6 /* ComputerOptionCell.swift */,
+			);
+			path = Computers;
+			sourceTree = "<group>";
+		};
+		B4AEA1EA2462A72100FEF1A6 /* Reports */ = {
+			isa = PBXGroup;
+			children = (
+				B4AEA1EB2462A74600FEF1A6 /* ReportsController.swift */,
+				B4AEA1ED2462A75600FEF1A6 /* AddReportsController.swift */,
+				B4AEA1EF2462A76500FEF1A6 /* ReportOptionCell.swift */,
+			);
+			path = Reports;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,14 +268,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4AEA1DC24626F9200FEF1A6 /* User.swift in Sources */,
 				B446FCC02460847900D633CA /* CompaniesController.swift in Sources */,
+				B4AEA1E52462780B00FEF1A6 /* AddComputersController.swift in Sources */,
+				B4AEA1F42463463B00FEF1A6 /* AddController.swift in Sources */,
+				B4AEA1E02462724F00FEF1A6 /* UserOptionCell.swift in Sources */,
+				B4AEA1F02462A76500FEF1A6 /* ReportOptionCell.swift in Sources */,
+				B4AEA1DE246270B000FEF1A6 /* AddUsersController.swift in Sources */,
+				B4AEA1EC2462A74600FEF1A6 /* ReportsController.swift in Sources */,
+				B4AEA1E72462782400FEF1A6 /* ComputerOptionCell.swift in Sources */,
+				B4AEA1F624636C6300FEF1A6 /* CompanyPicker.swift in Sources */,
 				B446FCBA245F4C2300D633CA /* Protocols.swift in Sources */,
 				B446FCC224608BAA00D633CA /* Company.swift in Sources */,
+				B4AEA1E92462784700FEF1A6 /* Computer.swift in Sources */,
+				B4AEA1EE2462A75600FEF1A6 /* AddReportsController.swift in Sources */,
 				B446FCBC245F510F00D633CA /* MenuOptionCell.swift in Sources */,
 				B446FCBE245F574200D633CA /* MenuOption.swift in Sources */,
 				B446FCB8245F2E3200D633CA /* MenuController.swift in Sources */,
+				B446FCC62460A69D00D633CA /* UsersController.swift in Sources */,
+				B4AEA1E3246277F700FEF1A6 /* ComputersController.swift in Sources */,
+				B4AEA1DA2461F96C00FEF1A6 /* AddCompaniesController.swift in Sources */,
+				B446FCC82460CF8000D633CA /* CompanyOptionCell.swift in Sources */,
 				B446FC9D245F2D5900D633CA /* AppDelegate.swift in Sources */,
 				B446FCB3245F2E0100D633CA /* HomeController.swift in Sources */,
+				B4AEA1F22462A7F300FEF1A6 /* Report.swift in Sources */,
 				B446FCB6245F2E2100D633CA /* ContainerController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

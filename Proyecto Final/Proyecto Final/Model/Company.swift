@@ -9,19 +9,15 @@
 import UIKit
 
 class Company {
-    var idCompany: Int
+    var idCompany: String
     var name: String
     var email: String
-    var createdAt: String
+    var created_at: String
     
-    init?(idCompany: Int, name: String, email: String, createdAt: String) {
-        if name.isEmpty || email.isEmpty {
-            return nil
-        }
-            
+    init?(idCompany: String, name: String, email: String, created_at: String) {            
         self.idCompany = idCompany
         self.name = name
         self.email = email
-        self.createdAt = createdAt
+        self.created_at = created_at
     }
 }

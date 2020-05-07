@@ -13,6 +13,7 @@ import UIKit
     
     var menuController: MenuController!
     var centerController: UIViewController!
+    var savedController: UIViewController!
     var isExpanded = false
     // Init
     override func viewDidLoad() {
@@ -38,6 +39,66 @@ import UIKit
         centerController = UINavigationController(rootViewController: homeController)
         view.addSubview(centerController.view)
         addChild(centerController)
+        centerController.didMove(toParent: self)
+    }
+    
+    func configureCompaniesController() {
+        let companiesController = CompaniesController()
+        companiesController.delegate = self
+        savedController = centerController
+        centerController = UINavigationController(rootViewController: companiesController)
+        if centerController.view.isDescendant(of: view) {
+            view.bringSubviewToFront(centerController.view)
+        } else {
+            view.addSubview(centerController.view)
+            view.sendSubviewToBack(savedController.view)
+            addChild(centerController)
+        }
+        centerController.didMove(toParent: self)
+    }
+    
+    func configureUsersController() {
+        let usersController = UsersController()
+        usersController.delegate = self
+        savedController = centerController
+        centerController = UINavigationController(rootViewController: usersController)
+        if centerController.view.isDescendant(of: view) {
+            view.bringSubviewToFront(centerController.view)
+        } else {
+            view.addSubview(centerController.view)
+            view.sendSubviewToBack(savedController.view)
+            addChild(centerController)
+        }
+        centerController.didMove(toParent: self)
+    }
+    
+    func configureComputersController() {
+        let computersController = ComputersController()
+        computersController.delegate = self
+        savedController = centerController
+        centerController = UINavigationController(rootViewController: computersController)
+        if centerController.view.isDescendant(of: view) {
+            view.bringSubviewToFront(centerController.view)
+        } else {
+            view.addSubview(centerController.view)
+            view.sendSubviewToBack(savedController.view)
+            addChild(centerController)
+        }
+        centerController.didMove(toParent: self)
+    }
+    
+    func configureReportsController() {
+        let reportsController = ReportsController()
+        reportsController.delegate = self
+        savedController = centerController
+        centerController = UINavigationController(rootViewController: reportsController)
+        if centerController.view.isDescendant(of: view) {
+            view.bringSubviewToFront(centerController.view)
+        } else {
+            view.addSubview(centerController.view)
+            view.sendSubviewToBack(savedController.view)
+            addChild(centerController)
+        }
         centerController.didMove(toParent: self)
     }
     
@@ -85,15 +146,13 @@ import UIKit
     func didSelectMenuOption(menuOption: MenuOption) {
         switch menuOption {
         case .Build:
-            print("show Build")
+            configureUsersController()
         case .Apartment:
-            let controller = CompaniesController()
-            present(UINavigationController(rootViewController: controller), animated: true, completion: nil)
-            print("show Build")
+            configureCompaniesController()
         case .Computer:
-            print("show Build")
+            configureComputersController()
         case .Report:
-            print("show Build")
+            configureReportsController()
         }
     }
     
